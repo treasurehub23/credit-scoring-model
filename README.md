@@ -1,16 +1,16 @@
-# credit scoring model
+# Credit scoring model
 Predicting individual's credit worthiness
 
-# Project overview 
+### Project overview 
 Built a multi-class classification model
 
-# Dataset
+### Dataset
 Source: Kaggle
 Size: 100,000
 Features: 
 Target: 3 credit risk classes(Standard, good and poor) in 52:29:19 proportion
 
-# Methodology
+## Methodology
 ### Initial dataset
 - Original dataset: 100,000
 - After deduplication : 12,500
