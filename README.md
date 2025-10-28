@@ -5,10 +5,9 @@ Predicting individual's credit worthiness
 Built a multi-class classification model
 
 ### Dataset
-Source: Kaggle
-Size: 100,000
-Features: 
-Target: 3 credit risk classes(Standard, good and poor) in 52:29:19 proportion
+- Source: Kaggle
+- Size: 100,000
+- Target: 3 credit risk classes(Standard, good and poor) in 52:29:19 proportion
 
 ## Methodology
 ### Initial dataset
@@ -17,23 +16,23 @@ Target: 3 credit risk classes(Standard, good and poor) in 52:29:19 proportion
 - Reason: Dataset contained multiple entries per user, kept only most recent record.
 
 ### Feature selection
-Started with 25 features and remived several during exploratory analysis
--Removed features with no predictive power 
+- Started with 25 features and remived several during exploratory analysis
+- Removed features with no predictive power 
 
-Final feature set: contained 21 features after encoding 
+- Final feature set: contained 21 features after encoding 
 
 ### Data Preprocessing
--Missing values imputation
--One hot encoding for categorical data
--Feature scaling for numerical data with Standard scaler
--SMOTE oversampling to handle class imbalance
+- Missing values imputation
+- One hot encoding for categorical data
+- Feature scaling for numerical data with Standard scaler
+- SMOTE oversampling to handle class imbalance
 
 ### Models Tested
--Logistic regression
--Random forest classifier (best performer)
--Gradient boosting
--XGBoost
--Support Vector Machine
+- Logistic regression
+- Random forest classifier (best performer)
+- Gradient boosting
+- XGBoost
+- Support Vector Machine
 
 ### Final Model Performance 
 - **Accuracy:** 76%
@@ -42,9 +41,9 @@ Final feature set: contained 21 features after encoding
 - **Class 2:**  76% precision,  88% recall    
 
 ## Key findings
--Age is the most important feature
--Feature importance scores are relatively low suggesting difficulty in modelling based on the available attributes.
--Acheiving 76% accuracy is reasonable given the dataset's limitation and probabilistic nature of credit scoring.
+- Age is the most important feature
+- Feature importance scores are relatively low suggesting difficulty in modelling based on the available attributes.
+- Acheiving 76% accuracy is reasonable given the dataset's limitation and probabilistic nature of credit scoring.
 
 ## Challenges
 - **Challenge:** Initial accuracy was only 31% due to preprocessing errors
